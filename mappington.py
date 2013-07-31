@@ -30,4 +30,5 @@ def register_routes(mappington_app):
 if __name__ == "__main__":
     mappington_app = bottle.Bottle()
     register_routes(mappington_app)
-    bottle.run(app=mappington_app, host='0.0.0.0', port=8098, debug=True, reloader=True)
+    bottle.run(app=mappington_app, host='0.0.0.0', port=8098,
+               debug=True, reloader=True)
